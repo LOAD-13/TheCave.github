@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    max-width: 90%;
+    text-align: center;
+    color: #333;
+}
+.formulario {
+            text-align: center;
+        }
+        .formulario h1 {
+            margin-bottom: 20px;
+        }
+        .formulario input[type="text"],
+        .formulario input[type="email"],
+        .formulario input[type="password"] {
+            width: 300px; /* Ancho del campo de entrada */
+            height: 40px; /* Altura del campo de entrada */
+            padding: 10px; /* Espacio interno */
+            border: 2px solid #ccc; /* Borde del campo */
+            border-radius: 5px; /* Borde redondeado */
+            margin-bottom: 10px; /* Margen inferior */
+            font-size: 16px; /* Tamaño de fuente */
+            transition: border-color 0.3s; /* Transición suave para el color del borde */
+        }
+        .formulario input[type="text"]:focus,
+        .formulario input[type="email"]:focus,
+        .formulario input[type="password"]:focus {
+            border-color: #007bff; /* Cambio de color de borde al enfocar */
+        }
+        .formulario button {
+            width: 100%; /* Ancho del botón */
+            height: 40px; /* Altura del botón */
+            background-color: red; /* Color de fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Borde redondeado */
+            font-size: 16px; /* Tamaño de fuente */
+            cursor: pointer; /* Cursor al pasar sobre el botón */
+            transition: background-color 0.3s; /* Transición suave para el color de fondo */
+        }
+        .formulario button:hover {
+            background-color: rgb(90, 9, 9); /* Cambio de color de fondo al pasar el mouse */
+        }
+    </style>
+    
+</head>
+<body background="img/Netflix-Background-prueba-1 (1).jpg">
+    <header class="header">
+                
+        <div class="menu container">
+
+            <a href="#" class="logo">Cave</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Peliculas</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-1">Login</a>
+        </div>
+
+        <div class="header-content container">
+
+            
+           
+        </div>
+
+    </header>
+    <div class="formulario">
+        <center><h1>Inicio de sesión</h1></center>
+        <form id="formulario" method="get">
+            <div class="username">
+                <input type="text" id="nombre" name="nombre" placeholder="Por favor ingrese su nombre de usuario" required>
+            </div>
+            <div class="email">
+                <input type="email" id="correo" name="correo" placeholder="Por favor ingrese su correo electrónico" required>
+            </div>
+            <div class="password">
+                <input type="password" id="contrasena" name="contrasena" placeholder="Por favor ingrese su contraseña" required>
+            </div>
+            <div class="registrarse">
+                <button type="submit" class="btn-1">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
